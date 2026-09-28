@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приют «Добрые лапки» — кошки ищут дом</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">🐾 Добрые лапки</div>
+            <nav class="nav">
+                <a href="#cats">Наши кошки</a>
+                <a href="#how">Как забрать</a>
+                <a href="#help">Помочь</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <h1>Каждая кошка заслуживает дом</h1>
+            <p>Мы — приют, который ищет добрые руки для своих подопечных. Познакомьтесь с ними — возможно, именно вас ждёт ваш друг.</p>
+            <a href="#cats" class="btn">Посмотреть кошек</a>
+        </div>
+    </section>
+
+    <!-- Каталог кошек -->
+    <section id="cats" class="section">
+        <div class="container">
+            <h2>Кто ищет дом</h2>
+            <div class="cats-grid">
+
+                <!-- Карточка кошки -->
+                <article class="cat-card">
+                    <div class="cat-photo">🐱</div>
+                    <div class="cat-info">
+                        <h3>Мурка</h3>
+                        <p class="cat-meta">2 года · кошка · стерилизована</p>
+                        <p class="cat-desc">Ласковая и спокойная. Любит сидеть на руках и мурчать. Отлично ладит с детьми.</p>
+                        <a href="#contacts" class="btn-small">Хочу познакомиться</a>
+                    </div>
+                </article>
+
+                <article class="cat-card">
+                    <div class="cat-photo">🐈</div>
+                    <div class="cat-info">
+                        <h3>Барсик</h3>
+                        <p class="cat-meta">1 год · кот · привит</p>
+                        <p class="cat-desc">Игривый и активный. Обожает мячики и догонялки. Идеален для активной семьи.</p>
+                        <a href="#contacts" class="btn-small">Хочу познакомиться</a>
+                    </div>
+                </article>
+
+                <article class="cat-card">
+                    <div class="cat-photo">🐈‍⬛</div>
+                    <div class="cat-info">
+                        <h3>Тень</h3>
+                        <p class="cat-meta">3 года · кот · стерилизован</p>
+                        <p class="cat-desc">Спокойный и независимый. Любит наблюдать с подоконника. Ищет тихий дом.</p>
+                        <a href="#contacts" class="btn-small">Хочу познакомиться</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Как забрать -->
+    <section id="how" class="section section-gray">
+        <div class="container">
+            <h2>Как забрать кошку</h2>
+            <ol class="steps">
+                <li>Заполните анкету (или напишите нам в мессенджер).</li>
+                <li>Поговорите с куратором — мы расскажем о характере и здоровье.</li>
+                <li>Приезжайте познакомиться с кошкой.</li>
+                <li>Подпишите договор и забирайте друга домой!</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Помощь -->
+    <section id="help" class="section">
+        <div class="container">
+            <h2>Как ещё можно помочь</h2>
+            <div class="help-grid">
+                <div class="help-item">
+                    <h3>💛 Донат</h3>
+                    <p>Любая сумма идёт на корм, лекарства и лечение.</p>
+                </div>
+                <div class="help-item">
+                    <h3>🙌 Волонтёрство</h3>
+                    <p>Помогите с уборкой, фотосессиями или выгулом.</p>
+                </div>
+                <div class="help-item">
+                    <h3>📦 Вещи</h3>
+                    <p>Корм, наполнитель, переноски — всегда нужны.</p>
+                </div>
+                <div class="help-item">
+                    <h3>📢 Репост</h3>
+                    <p>Поделитесь нашим сайтом — это тоже помощь.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="section section-gray">
+        <div class="container">
+            <h2>Связаться с нами</h2>
+            <p>Город, улица, дом · Ежедневно с 10:00 до 19:00</p>
+            <p>Телефон: +7 (999) 123-45-67</p>
+            <p>Telegram / WhatsApp: @dobrye_lapki</p>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Приют «Добрые лапки». Сделано с любовью 🐾</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---------- Шапка ---------- */
+.header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d2691e;
+}
+
+.nav a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    color: #d2691e;
+}
+
+/* ---------- Баннер ---------- */
+.hero {
+    background: linear-gradient(135deg, #ffe4c4, #ffd1a4);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #5a3a1a;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #6b4a2a;
+}
+
+/* ---------- Кнопки ---------- */
+.btn {
+    display: inline-block;
+    background: #d2691e;
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a0522d;
+}
+
+.btn-small {
+    display: inline-block;
+    background: #d2691e;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.btn-small:hover {
+    background: #a0522d;
+}
+
+/* ---------- Секции ---------- */
+.section {
+    padding: 70px 0;
+}
+
+.section-gray {
+    background: #faf6f0;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #5a3a1a;
+}
+
+/* ---------- Карточки кошек ---------- */
+.cats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.cat-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.cat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.cat-photo {
+    height: 180px;
+    background: #ffe4c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.cat-info {
+    padding: 20px;
+}
+
+.cat-info h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #5a3a1a;
+}
+
+.cat-meta {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.cat-desc {
+    font-size: 15px;
+    color: #555;
+}
+
+/* ---------- Шаги ---------- */
+.steps {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+.steps li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* ---------- Помощь ---------- */
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.help-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.help-item h3 {
+    margin-bottom: 10px;
+    color: #d2691e;
+}
+
+/* ---------- Подвал ---------- */
+.footer {
+    background: #5a3a1a;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+/* ---------- Мобильная адаптация ---------- */
+@media (max-width: 700px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav a {
+        margin: 0 8px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero {
+        padding: 50px 0;
+    }
+    .section h2 {
+        font-size: 24px;
+    }
+}
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #3a2a1a;
+    line-height: 1.6;
+    background: #fffaf3;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ---------- Шапка ---------- */
+.header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(210, 105, 30, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d2691e;
+    letter-spacing: 0.5px;
+}
+
+.nav a {
+    color: #5a3a1a;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #d2691e;
+}
+
+/* ---------- Баннер ---------- */
+.hero {
+    background: linear-gradient(135deg, #ffd7a8 0%, #ffb87a 50%, #ffa858 100%);
+    padding: 90px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "🐾 🐾 🐾";
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    font-size: 26px;
+    opacity: 0.35;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: #4a2a0a;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 620px;
+    margin: 0 auto 30px;
+    color: #6b4a2a;
+}
+
+/* ---------- Кнопки ---------- */
+.btn {
+    display: inline-block;
+    background: #d2691e;
+    color: #fff;
+    padding: 14px 34px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(210, 105, 30, 0.4);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a0522d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(210, 105, 30, 0.5);
+}
+
+.btn-small {
+    display: inline-block;
+    background: #d2691e;
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 14px;
+    transition: 0.3s;
+}
+
+.btn-small:hover {
+    background: #a0522d;
+}
+
+/* ---------- Секции ---------- */
+.section {
+    padding: 80px 0;
+}
+
+.section-gray {
+    background: #fdf2e3;
+}
+
+.section h2 {
+    font-size: 34px;
+    margin-bottom: 45px;
+    text-align: center;
+    color: #4a2a0a;
+    font-weight: 800;
+}
+
+.section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #d2691e;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* ---------- Карточки кошек ---------- */
+.cats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 28px;
+}
+
+.cat-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(210, 105, 30, 0.12);
+    transition: 0.3s;
+    border: 2px solid #ffe8cc;
+}
+
+.cat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(210, 105, 30, 0.25);
+    border-color: #ffb87a;
+}
+
+/* Фото кошки — теперь настоящая картинка */
+.cat-photo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    background: #ffe4c4;
+}
+
+/* Заглушка, если фото нет */
+.cat-photo-placeholder {
+    height: 220px;
+    background: linear-gradient(135deg, #ffe4c4, #ffd1a4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.cat-info {
+    padding: 22px;
+}
+
+.cat-info h3 {
+    font-size: 23px;
+    margin-bottom: 6px;
+    color: #4a2a0a;
+}
+
+.cat-meta {
+    font-size: 13px;
+    color: #b08050;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.cat-desc {
+    font-size: 15px;
+    color: #5a4a3a;
+}
+
+/* ---------- Шаги ---------- */
+.steps {
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 17px;
+    list-style: none;
+    counter-reset: step;
+}
+
+.steps li {
+    margin-bottom: 18px;
+    padding: 18px 20px 18px 70px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(210, 105, 30, 0.1);
+    position: relative;
+    counter-increment: step;
+}
+
+.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background: #d2691e;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* ---------- Помощь ---------- */
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.help-item {
+    background: #fff;
+    padding: 28px 22px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(210, 105, 30, 0.1);
+    text-align: center;
+    transition: 0.3s;
+    border-top: 4px solid #d2691e;
+}
+
+.help-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(210, 105, 30, 0.2);
+}
+
+.help-item h3 {
+    margin-bottom: 10px;
+    color: #d2691e;
+    font-size: 19px;
+}
+
+/* ---------- Контакты ---------- */
+#contacts p {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #5a4a3a;
+}
+
+/* ---------- Подвал ---------- */
+.footer {
+    background: #4a2a0a;
+    color: #ffd7a8;
+    text-align: center;
+    padding: 28px 0;
+    font-size: 14px;
+}
+
+/* ---------- Мобильная адаптация ---------- */
+@media (max-width: 700px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero {
+        padding: 55px 0;
+    }
+    .section h2 {
+        font-size: 25px;
+    }
+}
